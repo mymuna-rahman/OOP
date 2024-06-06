@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.cs.oop.techgiant.studentprofile/com.cs.oop.techgiant.studentprofile.HelloApplication
+                                com.cs.oop.techgiant.studentprofile/com.cs.oop.techgiant.studentprofile.MainApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
