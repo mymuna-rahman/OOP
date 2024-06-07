@@ -44,5 +44,16 @@ public class StudentController
             gender = "Female";
         }
 
+        Student student = new Student(name, id, dob, nationality, gender);
+
+        //displayTextarea.setText(student.toString());// setText makes the data one time, i.e entering new data will remove the previous one.
+        //appendText instead so that all the inputted data stays.
+
+        displayTextarea.appendText(student.toString());
+
+
+
+
+
     }
 }
