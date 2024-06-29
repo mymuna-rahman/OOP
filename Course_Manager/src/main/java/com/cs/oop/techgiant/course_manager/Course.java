@@ -23,17 +23,6 @@ public class Course {
         this.capacity = capacity;
     }
 
-
-    public Course(String courseName, String courseCode, String courseTime, int sectionNum, String courseType, String facultyName, int capacity) {
-        this.courseName = courseName;
-        this.courseCode = courseCode;
-        this.courseTime = courseTime;
-        this.sectionNum = sectionNum;
-        this.courseType = courseType;
-        this.facultyName = facultyName;
-        this.capacity = capacity;
-    }
-
     public String getCourseName() {
         return courseName;
     }

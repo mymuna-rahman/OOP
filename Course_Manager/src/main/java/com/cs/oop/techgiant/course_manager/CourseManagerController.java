@@ -15,7 +15,7 @@ public class CourseManagerController
     @javafx.fxml.FXML
     private TextField capacityTextField;
     @javafx.fxml.FXML
-    private ComboBox labCodeComboBox;
+    private ComboBox<String> labCodeComboBox;
     @javafx.fxml.FXML
     private Label courseNvalueLabel;
     @javafx.fxml.FXML
@@ -85,7 +85,10 @@ public class CourseManagerController
             courseType = "Minor";
     }
 
-        Course new_course = new Course(courseType, courseNameTextField.getText(), courseCodeComboBox.getValue(), courseTimeComboBox.getValue(), Integer.parseInt(sectionNumTextField.getText(), labCodeComboBox.getValue(), labTimeComboBox.getValue(), facultyNameTextField.getText(), Integer.parseInt(capacityTextField.getText());
+        Course new_course = new Course(courseType, courseNameTextField.getText(), courseCodeComboBox.getValue(), courseTimeComboBox.getValue(), Integer.parseInt(sectionNumTextField.getText()), labCodeComboBox.getValue(), labTimeComboBox.getValue(), facultyNameTextField.getText(), Integer.parseInt(capacityTextField.getText()));
         courseDetail.add(new_course);
-
     }
+}
+
+
+
