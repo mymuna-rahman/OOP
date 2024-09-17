@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="470.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cs.oop.techgiant.supershopbillingapp.BillingViewController">
+   <children>
+      <Label layoutX="75.0" layoutY="48.0" text="Select Product:" />
+      <Label fx:id="unitPriceLabel" layoutX="183.0" layoutY="84.0" prefHeight="17.0" prefWidth="106.0" />
+      <Label layoutX="75.0" layoutY="125.0" text="Quantity:" />
+      <Label layoutX="75.0" layoutY="84.0" text="Unit Price in BDT:" />
+      <ComboBox fx:id="selectProductComboBox" layoutX="183.0" layoutY="44.0" onAction="#selectProductOnMouseClick" prefWidth="150.0" promptText="Select Product" />
+      <ComboBox fx:id="selectQuantityComboBox" layoutX="183.0" layoutY="121.0" prefWidth="150.0" promptText="Select Quantity" />
+      <TableView fx:id="productDetailsTable" layoutX="193.0" layoutY="209.0" prefHeight="200.0" prefWidth="279.0">
+        <columns>
+          <TableColumn fx:id="productCol" prefWidth="129.33333778381348" text="Product" />
+          <TableColumn fx:id="unitPriceCol" prefWidth="146.00001525878906" text="Price" />
+        </columns>
+      </TableView>
+      <Button layoutX="378.0" layoutY="27.0" mnemonicParsing="false" onAction="#addProductToCartOnClick" prefHeight="60.0" prefWidth="114.0" text="Add Product&#10;To Cart" />
+      <Button layoutX="378.0" layoutY="112.0" mnemonicParsing="false" onAction="#deleteProductFromCartOnClick" prefHeight="60.0" prefWidth="114.0" text="Delete Product&#10;From Cart" />
+   </children>
+</AnchorPane>
